@@ -1,0 +1,56 @@
+[
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\main.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\main.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/main.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\AVL.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\AVL.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/AVL.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/AVL.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\TablaHash.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\TablaHash.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/TablaHash.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/TablaHash.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\CargadorCSV.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\CargadorCSV.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/CargadorCSV.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/CargadorCSV.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\Menu.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\Menu.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/Menu.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/Menu.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\Graph.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\Graph.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/Graph.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/Graph.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\Projects.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\Projects.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/Projects.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/Projects.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\Cola.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\Cola.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/Cola.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/Cola.cpp.obj"
+},
+{
+  "directory": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.3\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Proyecto_Final.dir\\Benchmark.cpp.obj -c \"C:\\Users\\javie\\Desktop\\Universidad\\Programacion III\\Proyecto Final\\Benchmark.cpp\"",
+  "file": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/Benchmark.cpp",
+  "output": "C:/Users/javie/Desktop/Universidad/Programacion III/Proyecto Final/cmake-build-debug/CMakeFiles/Proyecto_Final.dir/Benchmark.cpp.obj"
+}
+]
