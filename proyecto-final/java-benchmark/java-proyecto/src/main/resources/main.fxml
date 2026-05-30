@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane
+        xmlns="http://javafx.com/javafx/21"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.benchmark.MainController"
+        style="-fx-background-color: #1e1e2e;">
+
+
+    <top>
+        <VBox style="-fx-background-color: #313244; -fx-padding: 16;">
+            <Label
+                    text="Red Social Académica — Benchmark Java"
+                    style="-fx-text-fill: #cdd6f4;
+                       -fx-font-size: 20px;
+                       -fx-font-weight: bold;"/>
+            <Label
+                    text="HashMap  ·  TreeMap  ·  Análisis de rendimiento"
+                    style="-fx-text-fill: #a6adc8;
+                       -fx-font-size: 13px;"/>
+        </VBox>
+    </top>
+
+
+    <center>
+        <TabPane
+                fx:id="tabPane"
+                tabClosingPolicy="UNAVAILABLE"
+                style="-fx-background-color: #1e1e2e;">
+
+
+            <Tab text="📂  Cargar CSV">
+                <VBox spacing="12"
+                      style="-fx-padding: 20; -fx-background-color: #1e1e2e;">
+
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <TextField
+                                fx:id="txtRutaCSV"
+                                promptText="Ruta del archivo estudiantes.csv"
+                                prefWidth="520"
+                                style="-fx-background-color: #313244;
+                                   -fx-text-fill: #cdd6f4;
+                                   -fx-prompt-text-fill: #6c7086;
+                                   -fx-border-color: #45475a;
+                                   -fx-border-radius: 6;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8;"/>
+                        <Button
+                                fx:id="btnBuscarCSV"
+                                text="Buscar..."
+                                onAction="#onBuscarCSV"
+                                style="-fx-background-color: #89b4fa;
+                                   -fx-text-fill: #1e1e2e;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8 16;"/>
+                        <Button
+                                fx:id="btnCargarCSV"
+                                text="Cargar CSV"
+                                onAction="#onCargarCSV"
+                                style="-fx-background-color: #a6e3a1;
+                                   -fx-text-fill: #1e1e2e;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8 16;"/>
+                    </HBox>
+
+                    <Label
+                            fx:id="lblEstadoCSV"
+                            text="Ningún archivo cargado."
+                            style="-fx-text-fill: #a6adc8; -fx-font-size: 12px;"/>
+
+
+                    <TableView
+                            fx:id="tablaEstudiantes"
+                            prefHeight="420"
+                            style="-fx-background-color: #313244;
+                               -fx-border-color: #45475a;
+                               -fx-border-radius: 8;
+                               -fx-background-radius: 8;">
+                        <columns>
+                            <TableColumn
+                                    fx:id="colId"
+                                    text="ID"
+                                    prefWidth="70"/>
+                            <TableColumn
+                                    fx:id="colNombre"
+                                    text="Nombre"
+                                    prefWidth="200"/>
+                            <TableColumn
+                                    fx:id="colCarrera"
+                                    text="Carrera"
+                                    prefWidth="200"/>
+                            <TableColumn
+                                    fx:id="colSemestre"
+                                    text="Semestre"
+                                    prefWidth="80"/>
+                            <TableColumn
+                                    fx:id="colGpa"
+                                    text="GPA"
+                                    prefWidth="80"/>
+                            <TableColumn
+                                    fx:id="colSkill"
+                                    text="Skill Score"
+                                    prefWidth="90"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="⚡  Benchmark">
+                <VBox spacing="16"
+                      style="-fx-padding: 20; -fx-background-color: #1e1e2e;">
+
+                    <HBox spacing="12" alignment="CENTER_LEFT">
+                        <Button
+                                fx:id="btnEjecutar"
+                                text="▶  Ejecutar Benchmark"
+                                onAction="#onEjecutarBenchmark"
+                                style="-fx-background-color: #f38ba8;
+                                   -fx-text-fill: #1e1e2e;
+                                   -fx-font-weight: bold;
+                                   -fx-font-size: 14px;
+                                   -fx-background-radius: 8;
+                                   -fx-padding: 10 24;"/>
+                        <Label
+                                fx:id="lblEstadoBenchmark"
+                                text="Listo para ejecutar."
+                                style="-fx-text-fill: #a6adc8;"/>
+                    </HBox>
+
+                    <ProgressBar
+                            fx:id="progressBenchmark"
+                            prefWidth="860"
+                            progress="0"
+                            style="-fx-accent: #89b4fa;"/>
+
+
+                    <TableView
+                            fx:id="tablaResultados"
+                            prefHeight="320"
+                            style="-fx-background-color: #313244;
+                               -fx-border-color: #45475a;
+                               -fx-border-radius: 8;
+                               -fx-background-radius: 8;">
+                        <columns>
+                            <TableColumn
+                                    fx:id="colLang"
+                                    text="Language"
+                                    prefWidth="100"/>
+                            <TableColumn
+                                    fx:id="colOp"
+                                    text="Operation"
+                                    prefWidth="120"/>
+                            <TableColumn
+                                    fx:id="colStruct"
+                                    text="Structure"
+                                    prefWidth="130"/>
+                            <TableColumn
+                                    fx:id="colRecords"
+                                    text="Records"
+                                    prefWidth="100"/>
+                            <TableColumn
+                                    fx:id="colTime"
+                                    text="Time (ms)"
+                                    prefWidth="120"/>
+                        </columns>
+                    </TableView>
+
+                    <HBox spacing="12" alignment="CENTER_LEFT">
+                        <Button
+                                fx:id="btnGuardarCSV"
+                                text="💾  Guardar java_results.csv"
+                                onAction="#onGuardarResultados"
+                                disable="true"
+                                style="-fx-background-color: #fab387;
+                                   -fx-text-fill: #1e1e2e;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8 18;"/>
+                        <Label
+                                fx:id="lblGuardado"
+                                text=""
+                                style="-fx-text-fill: #a6e3a1;"/>
+                    </HBox>
+                </VBox>
+            </Tab>
+
+
+            <Tab text="📊  Comparativa C++ vs Java">
+                <VBox spacing="14"
+                      style="-fx-padding: 20; -fx-background-color: #1e1e2e;">
+
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <TextField
+                                fx:id="txtRutaCpp"
+                                promptText="Ruta de cpp_results.csv"
+                                prefWidth="460"
+                                style="-fx-background-color: #313244;
+                                   -fx-text-fill: #cdd6f4;
+                                   -fx-prompt-text-fill: #6c7086;
+                                   -fx-border-color: #45475a;
+                                   -fx-border-radius: 6;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8;"/>
+                        <Button
+                                text="Buscar..."
+                                onAction="#onBuscarCpp"
+                                style="-fx-background-color: #89b4fa;
+                                   -fx-text-fill: #1e1e2e;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8 16;"/>
+                        <Button
+                                text="Generar Gráfica"
+                                onAction="#onGenerarGrafica"
+                                style="-fx-background-color: #cba6f7;
+                                   -fx-text-fill: #1e1e2e;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 6;
+                                   -fx-padding: 8 16;"/>
+                    </HBox>
+
+                    <Label
+                            fx:id="lblEstadoGrafica"
+                            text="Carga ambos archivos CSV para comparar."
+                            style="-fx-text-fill: #a6adc8; -fx-font-size: 12px;"/>
+
+                    <!-- Gráfica de barras -->
+                    <BarChart
+                            fx:id="barChart"
+                            prefHeight="420"
+                            style="-fx-background-color: #313244;
+                               -fx-border-color: #45475a;
+                               -fx-border-radius: 8;
+                               -fx-background-radius: 8;">
+                        <xAxis>
+                            <CategoryAxis
+                                    fx:id="ejeX"
+                                    label="Operación"
+                                    style="-fx-tick-label-fill: #cdd6f4;"/>
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis
+                                    fx:id="ejeY"
+                                    label="Tiempo (ms)"
+                                    style="-fx-tick-label-fill: #cdd6f4;"/>
+                        </yAxis>
+                    </BarChart>
+                </VBox>
+            </Tab>
+
+        </TabPane>
+    </center>
+
+</BorderPane>
